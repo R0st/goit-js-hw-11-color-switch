@@ -29,6 +29,7 @@ function randomIndex() {
   randomNumber = randomIntegerFromInterval(0, 5);
   changeBcgColor(colors[randomNumber]);
 };
+
 let changeColor = 0;
 
 function onClickStart() {
@@ -40,7 +41,7 @@ function onClickStart() {
 function onClickStop() {
   clearInterval(changeColor);
     refs.btnStart.removeAttribute('disabled');
-      refs.btnStop.setAttribute('disabled', true);
+    refs.btnStop.setAttribute('disabled', true);
 };
 
 
